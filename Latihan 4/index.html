@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas Dinamis</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Daftar Tugas</h1>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="Tambah tugas..." required>
+            <input type="date" id="taskDueDate">
+            <select id="taskPriority">
+                <option value="low">Rendah</option>
+                <option value="medium">Sedang</option>
+                <option value="high">Tinggi</option>
+            </select>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+
+        <div class="filters">
+            <div class="filter-buttons">
+                <button data-filter="all">Semua</button>
+                <button data-filter="active">Aktif</button>
+                <button data-filter="completed">Selesai</button>
+            </div>
+            <button id="sortByDueDate">Urutkan Berdasarkan Tanggal</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div id="taskStats">
+            <p><strong>Total Tugas:</strong> <span id="totalTasks">0</span></p>
+            <p><strong>Tugas Selesai:</strong> <span id="completedTasks">0</span></p>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

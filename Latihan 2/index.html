@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja Interaktif</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Keranjang Belanja</h1>
+
+        <div class="add-item">
+            <input type="text" id="itemName" placeholder="Nama Barang" required>
+            <input type="number" id="itemPrice" placeholder="Harga Barang" min="0" required>
+            <button onclick="addItem()">Tambah Barang</button>
+        </div>
+
+        <div id="itemList" class="item-list"></div>
+
+        <div id="totalSection" class="total-section">
+            <p id="subtotal">Subtotal: Rp 0</p>
+            <p id="discount">Diskon: Rp 0</p>
+            <p id="total">Total Akhir: Rp 0</p>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

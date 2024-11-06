@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-buttons button {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.filter-buttons button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.task-item.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-priority.high {
+    color: red;
+}
+
+.task-priority.medium {
+    color: orange;
+}
+
+.task-priority.low {
+    color: green;
+}
+
+#taskStats {
+    margin-top: 20px;
+    text-align: center;
+}
